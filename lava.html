@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Lava Cake</title>
+    <style>
+        #Yes {
+            width: 75%;
+            height: 55%;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 12pt;
+                line-height: 1.4;
+                color: black;
+                background: white;
+            }
+
+            #Yes {
+                width: 100%;
+                height: auto;
+                max-width: 6in;
+                page-break-inside: avoid;
+            }
+
+            h3 {
+                font-size: 16pt;
+                margin-bottom: 10pt;
+                page-break-after: avoid;
+            }
+
+            p {
+                margin-bottom: 12pt;
+                text-align: justify;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:after {
+                content: " (" attr(href) ")";
+                font-size: 10pt;
+                color: #666;
+            }
+
+            /* Hide navigation for print */
+            nav, .no-print {
+                display: none;
+            }
+
+            /* Ensure images fit on page */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Chocolate Lava Cake</h3>
+    <p>Chocolate Lava Cake, also known as molten chocolate cake, is a decadent dessert that delivers pure chocolate indulgence. This individual-sized cake features a firm chocolate exterior that gives way to a warm, flowing chocolate center when cut into. The "lava" effect is achieved by slightly underbaking the cake, leaving the center molten and gooey. Typically served warm with a dusting of powdered sugar and often accompanied by vanilla ice cream, this dessert creates a perfect contrast of temperatures and textures that chocolate lovers find irresistible.</p>
+
+    <img id="Yes" src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Chocolate Lava Cake with molten center">
+
+    <nav class="no-print">
+        <li><a href="index.html">Home</a></li>
+    </nav>
+</body>
+</html>
