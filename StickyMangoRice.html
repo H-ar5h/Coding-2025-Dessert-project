@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Mango Rice</title>
+    <style>
+        #Yes {
+            width: 75%;
+            height: 55%;
+        }
+
+        /* Print-specific styles */
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 12pt;
+                line-height: 1.4;
+                color: black;
+                background: white;
+            }
+
+            #Yes {
+                width: 100%;
+                height: auto;
+                max-width: 6in;
+                page-break-inside: avoid;
+            }
+
+            h3 {
+                font-size: 16pt;
+                margin-bottom: 10pt;
+                page-break-after: avoid;
+            }
+
+            p {
+                margin-bottom: 12pt;
+                text-align: justify;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:after {
+                content: " (" attr(href) ")";
+                font-size: 10pt;
+                color: #666;
+            }
+
+            /* Hide navigation for print */
+            nav, .no-print {
+                display: none;
+            }
+
+            /* Ensure images fit on page */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Sticky Mango Rice</h3>
+    <p>Sticky Mango Rice (Khao Niao Mamuang) is a beloved Thai dessert that perfectly balances sweet, creamy, and tropical flavors. This traditional dessert features glutinous rice cooked in rich coconut milk, served alongside fresh, ripe mango slices. The rice becomes tender and slightly sweet, while the coconut milk adds a luxurious creaminess. Often garnished with toasted coconut flakes or mung beans, this dessert represents the perfect harmony of textures and flavors that Thai cuisine is famous for. It's a refreshing and satisfying end to any meal.</p>
+
+    <img id="Yes" src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Thai Sticky Mango Rice dessert">
+
+    <nav class="no-print">
+        <li><a href="index.html">Home</a></li>
+    </nav>
+</body>
+</html>
