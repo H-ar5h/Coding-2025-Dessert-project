@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baklava</title>
+    <style>
+        #Yes {
+            width: 75%;
+            height: 55%;
+        }
+
+       
+        @media print {
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 12pt;
+                line-height: 1.4;
+                color: black;
+                background: white;
+            }
+
+            #Yes {
+                width: 100%;
+                height: auto;
+                max-width: 6in;
+                page-break-inside: avoid;
+            }
+
+            h3 {
+                font-size: 16pt;
+                margin-bottom: 10pt;
+                page-break-after: avoid;
+            }
+
+            p {
+                margin-bottom: 12pt;
+                text-align: justify;
+            }
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
+
+            a:after {
+                content: " (" attr(href) ")";
+                font-size: 10pt;
+                color: #666;
+            }
+
+           
+            nav, .no-print {
+                display: none;
+            }
+
+            /* Ensure images fit on page */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Baklava</h3>
+    <p>Baklava is a rich, sweet pastry that originated in the Ottoman Empire and is beloved throughout the Middle East, Mediterranean, and Balkans. This layered dessert consists of delicate phyllo dough sheets brushed with butter or oil, filled with chopped nuts (typically pistachios, walnuts, or almonds), and sweetened with honey or syrup. The pastry is baked until golden and crispy, then soaked in a fragrant syrup often flavored with lemon juice, orange blossom, or rose water. Each bite delivers a perfect balance of flaky texture, rich nuts, and sweet syrup.</p>
+
+    <img id="Yes" src="https://images.unsplash.com/photo-1519676867240-f03562e64548?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Traditional Baklava pastry">
+
+    <nav class="no-print">
+        <li><a href="index.html">Home</a></li>
+    </nav>
+</body>
+</html>
